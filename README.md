@@ -13,7 +13,7 @@ By leveraging historical applicant data (income, credit history, debt-to-income 
 - **Languages:** Python (Pandas, NumPy)
 - **Machine Learning:** Scikit-Learn, XGBoost
 - **Explainability:** SHAP (Shapley Additive Explanations)
-- **Deployment:** Streamlit (UI), Docker (Containerization)
+- **Deployment:** Streamlit (UI), Docker (Containerization) In Progress
 
 ## 📊 Feature Engineering & Insights
 The model utilizes advanced feature engineering to increase predictive power:
