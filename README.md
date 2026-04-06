@@ -1,21 +1,15 @@
-# 🏦 SmartLoan-AI: Advanced Credit Risk Prediction
+# 👋 Hi, I'm Siddharth | Data Science Aspirant
 
-## 📌 Business Case
-In the banking sector, identifying high-risk loan applicants is critical to maintaining low default rates. **SmartLoan-AI** uses Machine Learning to automate the approval process, providing a data-driven risk assessment score for each applicant.
+I build Machine Learning solutions that bridge the gap between raw data and business intelligence. Currently focusing on **FinTech Risk** and **Dynamic Pricing Models**.
 
-## 🛠️ Data Engineering & Pipeline
-* **Handling Imbalance:** Applied **SMOTE** (Synthetic Minority Over-sampling Technique) to address the class imbalance between approved and defaulted loans.
-* **Feature Selection:** Utilized Correlation Heatmaps to remove redundant features and prevent multi-collinearity.
-* **Scaling:** Implemented `StandardScaler` to normalize numerical features like Income and Loan Amount for consistent model convergence.
+### 🛠 Tech Stack
+* **Languages:** Python (Pandas, Scikit-Learn, XGBoost)
+* **Specialties:** Predictive Modeling, Explainable AI (XAI), Geospatial Analysis
+* **Tools:** Git, Docker, Streamlit, SQL
 
-
-
-## 🧠 Model Architecture & Explainability
-I compared **Logistic Regression**, **Decision Trees**, and **Random Forest**. The Random Forest model achieved the highest F1-score.
-* **Explainable AI (XAI):** Integrated **SHAP** values to ensure "Right to Explanation" compliance, showing exactly which features (e.g., Credit History) led to a loan rejection.
-
-## 📊 Performance Metrics
-* **Accuracy:** 92.5%
-* **Precision/Recall:** Optimized for Recall to minimize "False Positives" (Bad loans marked as Good).
+### 🚀 Key Projects
+1. **[SmartLoan-AI](link):** End-to-end credit scoring with SMOTE for class imbalance.
+2. **[Flight Fare Engine](link):** Regression model for dynamic airline pricing ($R^2=0.81$).
+3. **[Geospatial Housing Analyst](link):** California real estate valuation using spatial features.
 
 ---
