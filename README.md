@@ -1,33 +1,21 @@
-# 🚀 SmartLoan-AI: End-to-End Predictive Lending Framework
+# 🏦 SmartLoan-AI: Advanced Credit Risk Prediction
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![ML Framework](https://img.shields.io/badge/Model-Scikit--Learn-orange)](https://scikit-learn.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## 📌 Business Case
+In the banking sector, identifying high-risk loan applicants is critical to maintaining low default rates. **SmartLoan-AI** uses Machine Learning to automate the approval process, providing a data-driven risk assessment score for each applicant.
 
-## 📌 Business Overview
-In the modern fintech landscape, credit risk assessment is the backbone of profitability. **SmartLoan-AI** is a machine learning solution designed to automate loan approval processes by predicting the probability of default with high precision. 
-
-By leveraging historical applicant data (income, credit history, debt-to-income ratios), the model provides a data-driven decision-making tool for financial institutions.
-
-## 🛠 Tech Stack
-- **Languages:** Python (Pandas, NumPy)
-- **Machine Learning:** Scikit-Learn, XGBoost
-- **Explainability:** SHAP (Shapley Additive Explanations)
-- **Deployment:** Streamlit (UI), Docker (Containerization) In Progress
-
-## 📊 Feature Engineering & Insights
-The model utilizes advanced feature engineering to increase predictive power:
-* **Income-to-Loan Ratio:** Assessing the feasibility of repayment.
-* **Credit History Maturity:** Weighting the age of credit lines.
-* **Class Imbalance Handling:** Implemented SMOTE (Synthetic Minority Over-sampling Technique) to ensure the model doesn't bias toward "Approved" cases.
+## 🛠️ Data Engineering & Pipeline
+* **Handling Imbalance:** Applied **SMOTE** (Synthetic Minority Over-sampling Technique) to address the class imbalance between approved and defaulted loans.
+* **Feature Selection:** Utilized Correlation Heatmaps to remove redundant features and prevent multi-collinearity.
+* **Scaling:** Implemented `StandardScaler` to normalize numerical features like Income and Loan Amount for consistent model convergence.
 
 
 
-## 🧠 Explainable AI (XAI)
-Unlike standard "black-box" models, SmartLoan-AI uses **SHAP** to provide local and global explanations. This ensures compliance with financial regulations (like GDPR's "Right to Explanation"), allowing the system to state exactly why an applicant was rejected.
+## 🧠 Model Architecture & Explainability
+I compared **Logistic Regression**, **Decision Trees**, and **Random Forest**. The Random Forest model achieved the highest F1-score.
+* **Explainable AI (XAI):** Integrated **SHAP** values to ensure "Right to Explanation" compliance, showing exactly which features (e.g., Credit History) led to a loan rejection.
 
-## 🚀 How to Run
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/Sid-240202/SmartLoan-AI.git](https://github.com/Sid-240202/SmartLoan-AI.git)
-   cd SmartLoan-AI
+## 📊 Performance Metrics
+* **Accuracy:** 92.5%
+* **Precision/Recall:** Optimized for Recall to minimize "False Positives" (Bad loans marked as Good).
+
+---
